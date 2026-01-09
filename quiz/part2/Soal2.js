@@ -7,8 +7,14 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 
 function angkaPalindrome(num) {
   // you can only write your code here!
-  for(var i=0; i <=num;i++) {
-    
+  num++
+  for(var i = 0; i < num;i++){
+  let xtor =num.toString()
+  let reverse = xtor.split('').reverse().join('');
+  if(reverse == num) {
+    return reverse
+  }
+  num++
   }
 }
 
